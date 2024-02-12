@@ -116,12 +116,6 @@ public class SortsTracing {
         answer.add(new int[]{1, 1, 2, 2, 3, 3, 4, 4, 5, 6});
         answer.add(new int[]{1, 1, 1, 2, 3, 3, 4, 4, 5, 6});
         answer.add(new int[]{0, 1, 1, 2, 3, 3, 4, 4, 5, 6});
-
-
-
-
-
-
         return answer;
     }
 
