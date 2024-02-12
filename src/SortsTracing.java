@@ -33,19 +33,26 @@ public class SortsTracing {
 
     public ArrayList<int[]> InsertionSortRandomList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+        answer.add(new int[]{8, 2, 3, 5, 7, 9, 0});
+        answer.add(new int[]{2, 8, 3, 5, 7, 9, 0});
+        answer.add(new int[]{2, 3, 8, 5, 7, 9, 0});
+        answer.add(new int[]{2, 3, 5, 8, 7, 9, 0});
+        answer.add(new int[]{2, 3, 5, 7, 8, 9, 0});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
         return answer;
     }
 
     public ArrayList<int[]> InsertionSortSortedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
         return answer;
     }
 
     public ArrayList<int[]> InsertionSortReversedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+        answer.add(new int[]{9, 8, 7, 5, 3, 2, 0});
+        answer.add(new int[]{9, 8, 7, 5, 3, 2, 0});
+
         return answer;
     }
     
