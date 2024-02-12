@@ -45,14 +45,23 @@ public class SortsTracing {
     public ArrayList<int[]> InsertionSortSortedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
         answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
         return answer;
     }
 
     public ArrayList<int[]> InsertionSortReversedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
         answer.add(new int[]{9, 8, 7, 5, 3, 2, 0});
-        answer.add(new int[]{9, 8, 7, 5, 3, 2, 0});
-
+        answer.add(new int[]{8, 9, 7, 5, 3, 2, 0});
+        answer.add(new int[]{7, 8, 9, 5, 3, 2, 0});
+        answer.add(new int[]{5, 7, 8, 9, 3, 2, 0});
+        answer.add(new int[]{3, 5, 7, 8, 9, 2, 0});
+        answer.add(new int[]{2, 3, 5, 7, 8, 9, 0});
+        answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
         return answer;
     }
     
