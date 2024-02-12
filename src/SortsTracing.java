@@ -121,7 +121,8 @@ public class SortsTracing {
 
     public ArrayList<int[]> QuickSortRandomList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+        answer.add(new int[]{3, 6, 1, 7, 0});
+
         return answer;
     }
 
