@@ -121,21 +121,22 @@ public class SortsTracing {
     public ArrayList<int[]> QuickSortRandomList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
         //{3, 6, 1, 7, 0}
-        answer.add(new int[]{0, 3, 1, 7, 6});
-        answer.add(new int[]{0, 3, 1, 7, 6});
-
+        answer.add(new int[]{0, 1, 3, 7, 6});
+        answer.add(new int[]{0, 1, 3, 7, 6});
+        answer.add(new int[]{0, 1, 3, 6, 7});
         return answer;
     }
 
     public ArrayList<int[]> QuickSortSortedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+        answer.add(new int[]{0, 1, 3, 6, 7});
+        answer.add(new int[]{0, 1, 3, 6, 7});
         return answer;
     }
 
     public ArrayList<int[]> QuickSortReversedList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        // TODO
+
         return answer;
     }
 }
