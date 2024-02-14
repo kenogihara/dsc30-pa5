@@ -37,6 +37,7 @@ public class SortsTracing {
         answer.add(new int[]{2, 3, 8, 5, 7, 9, 0});
         answer.add(new int[]{2, 3, 5, 8, 7, 9, 0});
         answer.add(new int[]{2, 3, 5, 7, 8, 9, 0});
+        answer.add(new int[]{2, 3, 5, 7, 8, 9, 0});
         answer.add(new int[]{0, 2, 3, 5, 7, 8, 9});
         return answer;
     }
@@ -119,7 +120,9 @@ public class SortsTracing {
 
     public ArrayList<int[]> QuickSortRandomList() {
         ArrayList<int[]> answer = new ArrayList<int[]>();
-        answer.add(new int[]{3, 6, 1, 7, 0});
+        //{3, 6, 1, 7, 0}
+        answer.add(new int[]{0, 3, 1, 7, 6});
+        answer.add(new int[]{0, 3, 1, 7, 6});
 
         return answer;
     }
@@ -135,5 +138,4 @@ public class SortsTracing {
         // TODO
         return answer;
     }
-
 }
