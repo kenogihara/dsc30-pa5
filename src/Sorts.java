@@ -27,7 +27,7 @@ public class Sorts {
             // Move elements of the subarray that are greater than the key
             // to one position ahead of their current position.
             while (j >= start && list.get(j) > key) {
-                key = list.get(j);
+                list.set(j+1, list.get(j));
                 j = j - 1; // Move to the previous element on the left.
             }
             list.set(j + 1, key); // Insert the key into its correct position in the sorted subarray.
@@ -131,14 +131,14 @@ public class Sorts {
         Integer listMin = Collections.min(list);
         for (Integer data : list) {
             int bucketIndex = assignBucketIndex(data, numBuckets, listMin);
-            // TODO // Adds data to correct bucket
+            buckets.get(bucketIndex).add(data);
         }
 
         ArrayList<Integer> sortedList = new ArrayList<>();
         for (ArrayList<Integer> bucket : buckets) {
             if (bucket.size() > 0)
                 insertionSort(bucket, 0, bucket.size() - 1);
-            //TODO // Adds all elements in bucket to sortedList
+                sortedList.addAll(bucket);
         }
         return sortedList;
     }
@@ -172,12 +172,12 @@ public class Sorts {
         // Store the count of each element
         for (int i = 0; i < list.size(); i++) {
             int value = list.get(i);
-            // TODO // increment count array at correct index
+            count[value]++;
         }
 
         // Store the cummulative count of each array
         for (int i = 1; i <= max; i++) {
-            // TODO
+            count[i] += count[i-1];
         }
 
         // Find the index of each element of the original array in count array, and
