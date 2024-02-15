@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 /**
- * TODO: add class header
+ * Implementation of Sorts Class
  */
 public class Sorts {
 
@@ -27,7 +27,7 @@ public class Sorts {
             // Move elements of the subarray that are greater than the key
             // to one position ahead of their current position.
             while (j >= start && list.get(j) > key) {
-                //TODO // Shift the element to the right.
+                key = list.get(j);
                 j = j - 1; // Move to the previous element on the left.
             }
             list.set(j + 1, key); // Insert the key into its correct position in the sorted subarray.
