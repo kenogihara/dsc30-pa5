@@ -70,7 +70,7 @@ public class RuntimeAnalysis {
     public static ArrayList<Integer> generateArrayList(int size) {
         ArrayList<Integer> arr = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            arr.add((int) (Math.random() * 1000));
+            arr.add((int) (Math.random() * 10000));
         }
         return arr;
     }
