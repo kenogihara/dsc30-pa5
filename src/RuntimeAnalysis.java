@@ -10,16 +10,6 @@ import java.io.IOException;
 public class RuntimeAnalysis {
 
     private static final Integer[] LARGE_INPUT_SIZES = {
-            10_000,
-            20_000,
-            40_000,
-            80_000,
-            160_000,
-            320_000,
-            640_000,
-            1_280_000,
-    };
-    private static final Integer[] SMALL_INPUT_SIZES = {
             1_000,
             2_000,
             4_000,
@@ -28,6 +18,16 @@ public class RuntimeAnalysis {
             32_000,
             64_000,
             128_000,
+    };
+    private static final Integer[] SMALL_INPUT_SIZES = {
+            100,
+            200,
+            400,
+            800,
+            1_600,
+            3_200,
+            6_400,
+            12_800,
     };
     private static final int NUM_RUNS = 10;
 
@@ -55,7 +55,7 @@ public class RuntimeAnalysis {
             ArrayList<Integer> smallList = generateArrayList(SMALL_INPUT_SIZES[i]);
 
             timings.add(measureAndPrintSortingTime("Insertion Sort", smallList));
-            timings.add(measureAndPrintSortingTime("Quick Sort", largeList));
+            timings.add(measureAndPrintSortingTime("Quick Sort", smallList));
             timings.add(measureAndPrintSortingTime("Bucket Sort", largeList));
             timings.add(measureAndPrintSortingTime("Count Sort", largeList));
         }
