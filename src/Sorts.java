@@ -30,7 +30,7 @@ public class Sorts {
                 list.set(j+1, list.get(j));
                 j = j - 1; // Move to the previous element on the left.
             }
-            list.set(j + 1, key); // Insert the key into its correct position in the sorted subarray.
+            list.set(j + 1, key); //Insert the key into its correct position in the sorted subarray
         }
     }
 
@@ -120,6 +120,7 @@ public class Sorts {
      * This method performs bucket sort on the input arraylist
      *
      * @param list The arraylist we want to sort
+     * @return a new array list that contains all elements in sorted order.
      */
     public static ArrayList<Integer> bucketSort(ArrayList<Integer> list) {
         ArrayList<ArrayList<Integer>> buckets = new ArrayList<>();
@@ -147,6 +148,7 @@ public class Sorts {
      * This method performs count sort on the input arraylist
      *
      * @param list The arraylist we want to sort
+     * @return a new array list that contains all elements in sorted order.
      */
     public static ArrayList<Integer> countSort(ArrayList<Integer> list) {
         ArrayList<Integer> output = new ArrayList<Integer>();
